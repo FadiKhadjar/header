@@ -1,0 +1,44 @@
+#page-title {
+    background-color: #F7F7F7;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content {
+            padding: 2rem;
+            h2 {
+                color: $main-color;
+            }
+            .breadcrumbs {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+        
+                .fa-chevron-right {
+                    font-size: .7rem;
+                }
+                .breadcrumb-link {
+                    a {
+                        color: $note-color;
+                        &:hover {
+                            color: $note-color;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                li {
+                    display: inline;
+                    margin-right: 0.4rem;
+        
+                    &:last-child {
+                        color: $sub-color2;
+                    }
+        
+                }
+            }
+        }
+    }
+}

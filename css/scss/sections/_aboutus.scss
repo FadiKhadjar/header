@@ -1,0 +1,76 @@
+#about-us {
+    position: relative;
+    padding-bottom: 7rem;
+    padding-top: 5rem;
+    .container {
+        display: flex;
+        
+        .content {
+            max-width: 670px;
+            .sub-color {
+                color: $sub-color2;
+            }
+
+            .quote{
+                font-style: italic;
+                color: $body-text;
+                @include text-xl
+                
+            }
+
+            p{
+                color: $body-text;
+                @include text-s
+
+            }
+
+
+            h2 {
+                color: $main-color;
+            }
+        }
+        .request-form {
+            position: absolute;
+            top: -4rem;
+            left: 56%;
+            box-shadow: 0 3px 10px #0000000f, 0 4px 5px #0000000d;
+            overflow: hidden;
+
+            .form-title {
+                    
+                background-color: $main-color;
+                h3 {
+                    color: $sub-color1;
+                    padding: 1rem;
+                }
+                
+            }
+            form {
+                padding: 30px 20px;
+                max-width: 450px;
+                display: grid;
+                row-gap: 1rem;
+                
+                input {
+                    border-radius: 5px;
+                    font-style: italic;
+                    padding: 5px;
+                    border: 1px solid $note-color;
+                    
+                }
+                p {
+                    font-style: italic;
+                    font-weight: bold;
+                    color: $body-text;
+                    font-size: 13px;
+                }
+                button {
+                    background-color: $sub-color1;
+                    color: $main-color;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

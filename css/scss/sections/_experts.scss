@@ -1,0 +1,49 @@
+#experts {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        .section-title {
+            .sub-color {
+                color: $sub-color2;
+            }
+            h2 {
+                color: $main-color;
+                max-width: 500px;
+            }
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3rem;
+            .expert-card {
+                border: 1px solid #EAEAEA;
+                .expert-info {
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    h5 {
+                        margin-top: 0.5rem;
+                        margin-left: 1rem;
+                        color: $main-color;
+                    }
+                    p {
+                        margin-left: 1rem;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .flex {
+                display: flex;
+                gap: 2rem;
+            }
+            
+            
+        }
+    }
+}

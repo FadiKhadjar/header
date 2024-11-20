@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+$font-manrope: 'Manrope', sans-serif;
+
+@mixin standard-text {
+    line-height: 160%;
+    font-weight: 400;
+    color: $note-color;
+    font-family: $font-manrope;
+}
+
+@mixin standard-heading {
+    @include standard-text();
+    font-weight: 800;
+    color: $gray-900;
+}
+
+@mixin text-nav { @include standard-text; font-size: 16px; color: $gray-800; font-weight: 600 !important; }
+
+@mixin text-xs { @include standard-text; font-size: 13px !important;}
+@mixin text-s { @include standard-text; font-size: 14px !important; }
+@mixin text-m { @include standard-text; font-size: 16px !important; }
+@mixin text-lg { @include standard-text; font-size: 18px !important; }
+@mixin text-xl { @include standard-text; font-size: 20px !important; }
+
+@mixin h1 { @include standard-heading; font-size: 50px !important; }
+@mixin h2 { @include standard-heading; font-size: 40px !important; }
+@mixin h3 { @include standard-heading; font-size: 30px !important; }
+@mixin h4 { @include standard-heading; font-size: 25px !important; }
+@mixin h5 { @include standard-heading; font-size: 22px !important; }
+@mixin h6 { @include standard-heading; font-size: 18px !important; }

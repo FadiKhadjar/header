@@ -1,0 +1,60 @@
+#reviews {
+    display: flex;
+    position: relative;
+    height: 500px; // Täcker hela höjden på viewporten
+    overflow: hidden; // För att säkerställa att inget innehåll rinner över
+  
+    .background-half {
+      flex: 1;
+      width: 50%; // Varje bakgrundshalva tar upp 50% av bredden
+      position: relative;
+
+        &:first-child {
+          background-color: #F7F7F7;
+        }
+      img {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  
+    .container {
+      position: absolute;
+      left: 300px;
+      z-index: 2;
+      width: calc(50% - 300px);
+      padding: 50px;
+      box-sizing: border-box;
+  
+      .section-title {
+        h2 {
+            color: $main-color;
+            max-width: 350px;
+        }
+        .sub-color {
+          color: $sub-color2;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+      .italic {
+        font-style: italic;
+        font-size: 20px;
+      }
+      .info-content {
+        color: #999999;
+      }
+      .dark-color {
+        color: #2D303A; 
+      }
+      .review-stars {
+        margin-bottom: 1rem;
+        i {
+          color: $main-color;
+        }
+      }
+    }
+  }

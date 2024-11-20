@@ -1,0 +1,71 @@
+#recent-projects {
+    padding-top: 4rem;
+    .container {
+        .section-title {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            
+            h2 {
+                color: $main-color;
+            }
+            .sub-color {
+                color: $sub-color2;
+            }
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        .project-card {
+            position: relative;
+            max-width: 480px;
+            max-height: 480px;
+            overflow: hidden;
+
+            &:hover {
+                .overlay {
+                    height: 27%;
+                    opacity: 100%;
+                    .title {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-top: 1rem;
+                        color: $sub-color2;
+                    }
+                }
+            }
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 20%;
+                background-color: $main-color;
+                opacity: 80%;
+                color: white;
+                padding: 0 10px;
+                box-sizing: border-box;
+
+                
+                
+                .title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 1rem;   
+                }
+                p {
+                    margin-left: 0.5rem;
+                }
+              }
+        }
+    }
+}

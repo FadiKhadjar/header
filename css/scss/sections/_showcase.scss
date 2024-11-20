@@ -1,0 +1,28 @@
+#showcase {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-height: 550px;
+    background-image: url('/images/Home/sl-home2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .container {
+        
+        h1 {
+            padding-top: 4rem;
+            line-height: 4rem;
+            margin-bottom: 3rem;
+            max-width: 400px;
+            color: $main-color;
+        }
+        p {
+            max-width: 560px;
+        }
+        .btn-theme{
+            display: inline-block;
+            
+        }
+    }
+}

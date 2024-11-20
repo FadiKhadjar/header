@@ -1,0 +1,100 @@
+#map-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-height: 750px;
+    background-image: url('/images/Contact/map\ 1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    .container {
+        position: absolute;
+        top:75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $white;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+        text-align: center;
+        width: 1170px;
+        height: 570px;
+
+        .section-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                color: $sub-color2;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            h2 {
+                color: $main-color;
+                line-height: 1.2;
+            }
+        }
+        .italic {
+            font-style: italic;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            input{
+                width: 100%;
+                padding: 12px 390px 12px 12px;
+                border-radius: 5px;
+                outline:none;
+                border: 1px solid #EBEBEB;
+
+                &::placeholder{
+                    color: $note-color;
+                    font-style: italic;
+                }
+            }
+            .flex {
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                .btn-theme {
+                    max-width: 140px;
+                    border-radius: 2px;
+                    color: $sub-color1;
+                }
+            }
+            .dropdown {
+                
+                .dropbtn {
+                    width: 100%;
+                    white-space: nowrap;
+                    padding: 12px 385px 12px 12px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid #EBEBEB;
+                    background-color: transparent;
+                    color: $gray-700;
+                    position: relative;
+
+                    .fa-chevron-down {
+                        position: absolute;
+                        top: 18px;
+                        right: 8px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+#collaborations {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

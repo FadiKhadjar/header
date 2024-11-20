@@ -1,0 +1,48 @@
+@import './sections/header';
+@import './sections/topnav';
+@import './sections/_footer.scss';
+@import './sections/pagetitle';
+@import './sections/contactinfo';
+
+
+
+//home
+@import './sections/showcase';
+@import './sections/aboutus';
+@import './sections/homeservices';
+@import './sections/workteam';
+@import './sections/success';
+@import './sections/recentprojects';
+@import './sections/collabs';
+
+
+
+//services
+@import './sections/services';
+
+
+//about
+@import './sections/ceo-info';
+@import './sections/reviews';
+@import './sections/experts';
+
+
+//contact
+@import './sections/contact';
+
+
+//risk management
+@import './sections/riskmanagement.scss';
+@import './sections/question-form.scss';
+
+//our projects
+@import './sections/our-projects.scss';
+
+//annual report
+@import './sections/annual-report.scss';
+
+
+
+
+
+
